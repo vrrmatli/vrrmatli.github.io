@@ -1,0 +1,28 @@
+
+project:
+  type: website
+
+website:
+  title: "V Rohith Reddy Matli" 
+  navbar:
+    left:
+      - href: index.qmd
+        text: About Me
+      - href: background.qmd
+        text: Experience & Education
+      - text: Projects (Coming Soon)
+    right:
+      - icon: envelope
+        href: mailto:vrrmatli@gmail.com
+      - icon: linkedin
+        href: https://linkedin.com/in/vmatli
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=SHjYPf8AAAAJ&hl=en&authuser=4
+      - icon: github
+        href: https://github.com/vrrmatli
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true

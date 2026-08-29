@@ -1,0 +1,36 @@
+---
+title: "V Rohith Reddy Matli, Ph.D."
+image: profile.jpg
+about:
+  template: trestles
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:vrrmatli@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/vmatli
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=SHjYPf8AAAAJ&hl=en&authuser=4
+    - icon: github
+      text: Github
+      href: https://github.com/vrrmatli
+---
+
+## Hello! 👋
+
+I am a Data Scientist and **applied researcher** with a **Ph.D. in Geospatial Analytics**. Over the past eight years, I have built predictive models to make sense of everything from telecommunication operations to ecological system responses. 
+
+My passion lies in taking complex spatial-temporal data and turning it into clear, actionable insights. I enjoy blending foundational statistical methods, like **Bayesian inference** and **geostatistics**, with **modern AI tools** to build intelligent systems and novel frameworks that help answer tough questions. 
+
+Right now, my interests are lie at the intersection of **Agentic Workflows** and **Complex Spatial Networks**. I am leveraging my background in computational statistics to explore how we can design AI systems capable of reasoning through and optimizing spatial data autonomously.
+
+### Core Competencies
+* **Modelling & Statistics:** Geostatistics, Bayesian Inference, Uplift Modeling, Survival Analysis, XGBoost, Generalized Additive Models (GAMs), Monte Carlo Simulation.
+* **Programming & Data:** Python, R, SQL, SAS, Matlab, Amazon Redshift, PostgreSQL.
+* **BI & Geospatial:** Tableau, Power BI, ArcGIS/QGIS, Alteryx.
+* **AI Integration:** Prompt Engineering, GenAI integrations, Agentic Workflows (In Progress).
+
+
+*This website is a portfolio of my experiments with agentic workflows and anything I find interesting in general.*

@@ -1,0 +1,53 @@
+---
+title: "Experience, Education & Publications"
+---
+
+## 💼 Work Experience
+
+### **Data Scientist 2** 
+*Spectrum Business | Dec 2022 - Present*  
+
+* **Geospatial Optimization:** Optimized fiber build-out routes by building a geospatial route mapping and spatial clustering model that weighs construction costs against expected recurring revenue, saving $5M annually in survey costs.
+* **AI & Prompt Engineering:** Worked with two analysts to build a standalone AI chatbot merging Salesforce leads with predictive model outputs. Used prompt engineering to create a table-querying LLM, allowing sales reps to prospect in natural language and cutting ad-hoc data requests by 40%.
+* **Predictive Modeling:** Reduced customer churn by 12% and retained $2.7M in annual revenue by deploying a predictive “next best offer” model with targeted incentives.
+* **Forecasting & Bayesian Methods:** Sped up service delivery by 18 days using a Bayesian model to forecast realistic installation timelines based on local trends.
+* **Revenue Growth:** Drove a 15% increase in cross-sell conversions via a “wallet share” estimator combining internal billing history with external company data. Prevented $739K in yearly bad debt via a predictive collections model.
+
+### **Graduate Research Assistant**
+*NC State University | May 2016 - Oct 2022*
+
+* **Spatial-Temporal Modeling:** Predicted the expansion of Hypoxic “Dead Zones” across 25,000 sq. miles of the Gulf of Mexico using a custom spatial-temporal geostatistical model with Monte Carlo simulations, optimizing a $5M annual monitoring budget.
+* **Bayesian Climate Simulation:** Simulated ocean conditions over a 50-year horizon in a Bayesian framework, informing long-term resilience planning for 5 Mississippi River Basin states.
+* **Data Engineering:** Engineered a centralized pipeline standardizing 30+ years of water quality data from NOAA & 10+ state agencies, accelerating regional analysis by 3x.
+* **Visual Analytics:** Built interactive R Shiny dashboards that visualized complex predictive data for 40+ government regulators, speeding up environmental impact assessments by 60%.
+
+---
+
+## 🎓 Education
+
+**Ph.D., Geospatial Analytics/Spatial Statistics**  
+*North Carolina State University, Raleigh* | Nov 2022 (GPA: 4.0/4.0)
+
+**M.S., Environmental Engineering - Systems Engineering**  
+*North Carolina State University, Raleigh* | Nov 2017 (GPA: 3.4/4.0)
+
+**B.S., Civil Engineering**  
+*Pondicherry University, India* | May 2015 (GPA: 3.7/4.0)
+
+---
+
+## 📚 Publications
+
+* **Matli, V. R. R.**, & Obenour, D. R. *Usage of decision tree algorithms in predicting the inshore-offshore distribution of Gulf hypoxia.* (In Review)
+* **Matli, V. R. R.**, & Obenour, D. (2024). *Trends and drivers of hypoxic thickness and volume in the northern Gulf of Mexico: 1985–2018.* PloS one, 19(12), e0302759. 
+* **Matli, V. R. R.**, Laurent, A., Fennel, K., Craig, K., Krause, J., & Obenour, D. R. (2020). *Fusion-Based Hypoxia Estimates: Combining Geostatistical and Mechanistic Models of Dissolved Oxygen Variability.* Environmental Science & Technology, 54(20), 13016-13025.
+* Del Giudice, D., **Matli, V. R. R.**, & Obenour, D. R. (2019). *Bayesian Mechanistic Modelling Characterizes Gulf of Mexico Hypoxia: 1968-2016 and Future Scenarios.* Ecological Applications, e02032.
+* **Matli, V. R. R.**, Fang, S., Guinness, J., Rabalais, N. N., Craig, J. K., & Obenour, D. R. (2018). *Space-Time Geostatistical Assessment of Hypoxia in the Northern Gulf of Mexico.* Environmental science & technology, 52(21), 12484-12493.
+
+---
+
+## 🛠️ Technical Skills
+
+* **Modelling & Statistics:** Geostatistics, Bayesian Inference, Uplift Modeling, Survival Analysis, XGBoost, Generalized Additive Models (GAMs), Monte Carlo Simulation, Spatiotemporal Analysis.
+* **Languages:** Python (NumPy, Pandas, Scikit-Learn, PyTorch), R (tidyverse, data.table, caret, RShiny), SQL, SAS, Matlab.
+* **Data, BI & Geospatial:** Amazon Redshift, PostgreSQL, AWS S3, Tableau, Power BI, ArcGIS/QGIS, Alteryx, GenAI (Prompt Engineering).
