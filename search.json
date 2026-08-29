@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "V Rohith Reddy Matli, Ph.D.",
+    "section": "",
+    "text": "I am a Data Scientist and applied researcher with a Ph.D. in Geospatial Analytics. Over the past eight years, I have built predictive models to make sense of everything from telecommunication operations to ecological system responses.\nMy passion lies in taking complex spatial-temporal data and turning it into clear, actionable insights. I enjoy blending foundational statistical methods, like Bayesian inference and geostatistics, with modern AI tools to build intelligent systems and novel frameworks that help answer tough questions.\nRight now, my interests are lie at the intersection of Agentic Workflows and Complex Spatial Networks. I am leveraging my background in computational statistics to explore how we can design AI systems capable of reasoning through and optimizing spatial data autonomously.\n\n\n\nModelling & Statistics: Geostatistics, Bayesian Inference, Uplift Modeling, Survival Analysis, XGBoost, Generalized Additive Models (GAMs), Monte Carlo Simulation.\nProgramming & Data: Python, R, SQL, SAS, Matlab, Amazon Redshift, PostgreSQL.\nBI & Geospatial: Tableau, Power BI, ArcGIS/QGIS, Alteryx.\nAI Integration: Prompt Engineering, GenAI integrations, Agentic Workflows (In Progress).\n\nThis website is a portfolio of my experiments with agentic workflows and anything I find interesting in general."
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "V Rohith Reddy Matli, Ph.D.",
+    "section": "",
+    "text": "I am a Data Scientist and applied researcher with a Ph.D. in Geospatial Analytics. Over the past eight years, I have built predictive models to make sense of everything from telecommunication operations to ecological system responses.\nMy passion lies in taking complex spatial-temporal data and turning it into clear, actionable insights. I enjoy blending foundational statistical methods, like Bayesian inference and geostatistics, with modern AI tools to build intelligent systems and novel frameworks that help answer tough questions.\nRight now, my interests are lie at the intersection of Agentic Workflows and Complex Spatial Networks. I am leveraging my background in computational statistics to explore how we can design AI systems capable of reasoning through and optimizing spatial data autonomously.\n\n\n\nModelling & Statistics: Geostatistics, Bayesian Inference, Uplift Modeling, Survival Analysis, XGBoost, Generalized Additive Models (GAMs), Monte Carlo Simulation.\nProgramming & Data: Python, R, SQL, SAS, Matlab, Amazon Redshift, PostgreSQL.\nBI & Geospatial: Tableau, Power BI, ArcGIS/QGIS, Alteryx.\nAI Integration: Prompt Engineering, GenAI integrations, Agentic Workflows (In Progress).\n\nThis website is a portfolio of my experiments with agentic workflows and anything I find interesting in general."
+  },
+  {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Experience, Education & Publications",
+    "section": "",
+    "text": "Spectrum Business | Dec 2022 - Present\n\nGeospatial Optimization: Optimized fiber build-out routes by building a geospatial route mapping and spatial clustering model that weighs construction costs against expected recurring revenue, saving $5M annually in survey costs.\nAI & Prompt Engineering: Worked with two analysts to build a standalone AI chatbot merging Salesforce leads with predictive model outputs. Used prompt engineering to create a table-querying LLM, allowing sales reps to prospect in natural language and cutting ad-hoc data requests by 40%.\nPredictive Modeling: Reduced customer churn by 12% and retained $2.7M in annual revenue by deploying a predictive “next best offer” model with targeted incentives.\nForecasting & Bayesian Methods: Sped up service delivery by 18 days using a Bayesian model to forecast realistic installation timelines based on local trends.\nRevenue Growth: Drove a 15% increase in cross-sell conversions via a “wallet share” estimator combining internal billing history with external company data. Prevented $739K in yearly bad debt via a predictive collections model.\n\n\n\n\nNC State University | May 2016 - Oct 2022\n\nSpatial-Temporal Modeling: Predicted the expansion of Hypoxic “Dead Zones” across 25,000 sq. miles of the Gulf of Mexico using a custom spatial-temporal geostatistical model with Monte Carlo simulations, optimizing a $5M annual monitoring budget.\nBayesian Climate Simulation: Simulated ocean conditions over a 50-year horizon in a Bayesian framework, informing long-term resilience planning for 5 Mississippi River Basin states.\nData Engineering: Engineered a centralized pipeline standardizing 30+ years of water quality data from NOAA & 10+ state agencies, accelerating regional analysis by 3x.\nVisual Analytics: Built interactive R Shiny dashboards that visualized complex predictive data for 40+ government regulators, speeding up environmental impact assessments by 60%."
+  },
+  {
+    "objectID": "background.html#work-experience",
+    "href": "background.html#work-experience",
+    "title": "Experience, Education & Publications",
+    "section": "",
+    "text": "Spectrum Business | Dec 2022 - Present\n\nGeospatial Optimization: Optimized fiber build-out routes by building a geospatial route mapping and spatial clustering model that weighs construction costs against expected recurring revenue, saving $5M annually in survey costs.\nAI & Prompt Engineering: Worked with two analysts to build a standalone AI chatbot merging Salesforce leads with predictive model outputs. Used prompt engineering to create a table-querying LLM, allowing sales reps to prospect in natural language and cutting ad-hoc data requests by 40%.\nPredictive Modeling: Reduced customer churn by 12% and retained $2.7M in annual revenue by deploying a predictive “next best offer” model with targeted incentives.\nForecasting & Bayesian Methods: Sped up service delivery by 18 days using a Bayesian model to forecast realistic installation timelines based on local trends.\nRevenue Growth: Drove a 15% increase in cross-sell conversions via a “wallet share” estimator combining internal billing history with external company data. Prevented $739K in yearly bad debt via a predictive collections model.\n\n\n\n\nNC State University | May 2016 - Oct 2022\n\nSpatial-Temporal Modeling: Predicted the expansion of Hypoxic “Dead Zones” across 25,000 sq. miles of the Gulf of Mexico using a custom spatial-temporal geostatistical model with Monte Carlo simulations, optimizing a $5M annual monitoring budget.\nBayesian Climate Simulation: Simulated ocean conditions over a 50-year horizon in a Bayesian framework, informing long-term resilience planning for 5 Mississippi River Basin states.\nData Engineering: Engineered a centralized pipeline standardizing 30+ years of water quality data from NOAA & 10+ state agencies, accelerating regional analysis by 3x.\nVisual Analytics: Built interactive R Shiny dashboards that visualized complex predictive data for 40+ government regulators, speeding up environmental impact assessments by 60%."
+  },
+  {
+    "objectID": "background.html#education",
+    "href": "background.html#education",
+    "title": "Experience, Education & Publications",
+    "section": "🎓 Education",
+    "text": "🎓 Education\nPh.D., Geospatial Analytics/Spatial Statistics\nNorth Carolina State University, Raleigh | Nov 2022 (GPA: 4.0/4.0)\nM.S., Environmental Engineering - Systems Engineering\nNorth Carolina State University, Raleigh | Nov 2017 (GPA: 3.4/4.0)\nB.S., Civil Engineering\nPondicherry University, India | May 2015 (GPA: 3.7/4.0)"
+  },
+  {
+    "objectID": "background.html#publications",
+    "href": "background.html#publications",
+    "title": "Experience, Education & Publications",
+    "section": "📚 Publications",
+    "text": "📚 Publications\n\nMatli, V. R. R., & Obenour, D. R. Usage of decision tree algorithms in predicting the inshore-offshore distribution of Gulf hypoxia. (In Review)\nMatli, V. R. R., & Obenour, D. (2024). Trends and drivers of hypoxic thickness and volume in the northern Gulf of Mexico: 1985–2018. PloS one, 19(12), e0302759.\nMatli, V. R. R., Laurent, A., Fennel, K., Craig, K., Krause, J., & Obenour, D. R. (2020). Fusion-Based Hypoxia Estimates: Combining Geostatistical and Mechanistic Models of Dissolved Oxygen Variability. Environmental Science & Technology, 54(20), 13016-13025.\nDel Giudice, D., Matli, V. R. R., & Obenour, D. R. (2019). Bayesian Mechanistic Modelling Characterizes Gulf of Mexico Hypoxia: 1968-2016 and Future Scenarios. Ecological Applications, e02032.\nMatli, V. R. R., Fang, S., Guinness, J., Rabalais, N. N., Craig, J. K., & Obenour, D. R. (2018). Space-Time Geostatistical Assessment of Hypoxia in the Northern Gulf of Mexico. Environmental science & technology, 52(21), 12484-12493."
+  },
+  {
+    "objectID": "background.html#technical-skills",
+    "href": "background.html#technical-skills",
+    "title": "Experience, Education & Publications",
+    "section": "🛠️ Technical Skills",
+    "text": "🛠️ Technical Skills\n\nModelling & Statistics: Geostatistics, Bayesian Inference, Uplift Modeling, Survival Analysis, XGBoost, Generalized Additive Models (GAMs), Monte Carlo Simulation, Spatiotemporal Analysis.\nLanguages: Python (NumPy, Pandas, Scikit-Learn, PyTorch), R (tidyverse, data.table, caret, RShiny), SQL, SAS, Matlab.\nData, BI & Geospatial: Amazon Redshift, PostgreSQL, AWS S3, Tableau, Power BI, ArcGIS/QGIS, Alteryx, GenAI (Prompt Engineering)."
+  }
+]
