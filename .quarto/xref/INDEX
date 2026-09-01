@@ -7,5 +7,41 @@
   },
   "background.qmd": {
     "background.html": "50bada65"
+  },
+  "oil-motion/README.en.md": {
+    "README.en.html": "c0d1682b"
+  },
+  "oil-motion/references/baked-video.md": {
+    "baked-video.html": "1734af87"
+  },
+  "oil-motion/references/chroma-video.md": {
+    "chroma-video.html": "2ede99b8"
+  },
+  "oil-motion/references/concepts.md": {
+    "concepts.html": "f36cb3d3"
+  },
+  "oil-motion/references/delivery-selection.md": {
+    "delivery-selection.html": "cdf5f906"
+  },
+  "oil-motion/references/explainer.md": {
+    "explainer.html": "c6ef72b0"
+  },
+  "oil-motion/references/minimax-spritesheet.md": {
+    "minimax-spritesheet.html": "29b1723c"
+  },
+  "oil-motion/references/optimization.md": {
+    "optimization.html": "e981f8cd"
+  },
+  "oil-motion/references/prompting.md": {
+    "prompting.html": "c8eb1082"
+  },
+  "oil-motion/references/qa.md": {
+    "qa.html": "0d1adec0"
+  },
+  "oil-motion/references/runtime.md": {
+    "runtime.html": "91d95bb8"
+  },
+  "oil-motion/SKILL.md": {
+    "SKILL.html": "17662f51"
   }
 }

@@ -1,0 +1,1 @@
+A minimalist black and white wireframe line-art animation. The character starts by looking forward, then smoothly lowers his head to look down at the fully visible laptop. The animation remains strictly as monochrome black lines on a white background, with NO solid black fills in the hair. ONLY the map on the desk remains colored. No shading, no realistic textures.

@@ -1,5 +1,7 @@
 ---
 title: "V Rohith Reddy Matli, Ph.D."
+resources:
+  - "assets/motion.webp"
 image: profile.jpg
 about:
   template: trestles
@@ -18,7 +20,7 @@ about:
       href: https://github.com/vrrmatli
 ---
 
-## Hello! 👋
+## Hello!
 
 I am a Data Scientist and **applied researcher** with a **Ph.D. in Geospatial Analytics**. Over the past eight years, I have built predictive models to make sense of everything from telecommunication operations to ecological system responses. 
 
@@ -34,3 +36,79 @@ Right now, my interests are lie at the intersection of **Agentic Workflows** and
 
 
 *This website is a portfolio of my experiments with agentic workflows and anything I find interesting in general.*
+
+
+```{=html}
+<!-- Floating Assistant Container -->
+<div id="avatar-container" class="floating-avatar">
+  <div id="avatar-sprite"></div>
+</div>
+
+<style>
+.floating-avatar {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 240px; 
+  height: 240px; 
+  border-radius: 50%; /* Crops the square into a perfect circle */
+  overflow: hidden;
+  z-index: 9999;
+  pointer-events: none; /* Lets you click on text/links behind the avatar */
+}
+
+#avatar-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/motion.webp');
+  background-repeat: no-repeat;
+  background-position: 0px 0px; 
+  
+  /* THE MAGIC TRICK: This makes the white background transparent, 
+     leaving ONLY your black wireframe and colored map visible! */
+  mix-blend-mode: multiply; 
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sprite = document.getElementById("avatar-sprite");
+  
+  const CELL_WIDTH = 240;
+  const CELL_HEIGHT = 240;
+  
+  // ⚙️ UPDATED WITH YOUR EXACT JSON DATA
+  const COLUMNS = 11;        
+  const TOTAL_FRAMES = 121;   
+  
+  let ticking = false;
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrollPx = window.scrollY || document.documentElement.scrollTop;
+        
+        // The animation completes within the first 800 pixels of scrolling down.
+        // If the 121 frames feel too fast, change 800 to 1000 or 1200!
+        const SCROLL_THRESHOLD = 800; 
+        let scrollPercent = Math.min(scrollPx / SCROLL_THRESHOLD, 1.0);
+
+        // Map the scroll percentage to a specific frame
+        let frameIndex = Math.floor(scrollPercent * (TOTAL_FRAMES - 1));
+        
+        // Compute the X and Y background-position for the CSS Sprite
+        const col = frameIndex % COLUMNS;
+        const row = Math.floor(frameIndex / COLUMNS);
+        const posX = -(col * CELL_WIDTH);
+        const posY = -(row * CELL_HEIGHT);
+        
+        // Render the exact frame
+        sprite.style.backgroundPosition = `${posX}px ${posY}px`;
+        
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+});
+</script>
