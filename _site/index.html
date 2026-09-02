@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello">Hello! 👋</a>
+  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello">Hello!</a>
   <ul class="collapse">
   <li><a href="#core-competencies" id="toc-core-competencies" class="nav-link" data-scroll-target="#core-competencies">Core Competencies</a></li>
   </ul></li>
@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <section id="hello" class="level2">
-<h2 data-anchor-id="hello">Hello! 👋</h2>
+<h2 data-anchor-id="hello">Hello!</h2>
 <p>I am a Data Scientist and <strong>applied researcher</strong> with a <strong>Ph.D.&nbsp;in Geospatial Analytics</strong>. Over the past eight years, I have built predictive models to make sense of everything from telecommunication operations to ecological system responses.</p>
 <p>My passion lies in taking complex spatial-temporal data and turning it into clear, actionable insights. I enjoy blending foundational statistical methods, like <strong>Bayesian inference</strong> and <strong>geostatistics</strong>, with <strong>modern AI tools</strong> to build intelligent systems and novel frameworks that help answer tough questions.</p>
 <p>Right now, my interests are lie at the intersection of <strong>Agentic Workflows</strong> and <strong>Complex Spatial Networks</strong>. I am leveraging my background in computational statistics to explore how we can design AI systems capable of reasoning through and optimizing spatial data autonomously.</p>
@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/vrrmatli\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
