@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- THE MAIN CONTENT (Centered with max-width) -->
 <div style="max-width: 800px; margin-left: auto; margin-right: auto; padding-top: 20px;">
 
-## Hello! 👋
+## Hello!
 
 I am a Data Scientist and **applied researcher** with a **Ph.D. in Spatial Statistics**. Over the past eight years, I have built predictive models to make sense of everything from large-scale networks to complex environmental systems. 
 
