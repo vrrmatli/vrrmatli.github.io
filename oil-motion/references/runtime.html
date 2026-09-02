@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>runtime – V Rohith Reddy Matli</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">V Rohith Reddy Matli</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../background.html"> 
+<span class="menu-text">Experience &amp; Education</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Projects (Coming Soon)</span>
+    </span>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:vrrmatli@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/vmatli"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=SHjYPf8AAAAJ&amp;hl=en&amp;authuser=4"> <i class="bi bi-mortarboard-fill" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vrrmatli"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#运行时控制" id="toc-运行时控制" class="nav-link active" data-scroll-target="#运行时控制">运行时控制</a>
+  <ul class="collapse">
+  <li><a href="#先读预算结果" id="toc-先读预算结果" class="nav-link" data-scroll-target="#先读预算结果">先读预算结果</a></li>
+  <li><a href="#时间轴清单" id="toc-时间轴清单" class="nav-link" data-scroll-target="#时间轴清单">时间轴清单</a></li>
+  <li><a href="#frame-scrub" id="toc-frame-scrub" class="nav-link" data-scroll-target="#frame-scrub">frame-scrub</a></li>
+  <li><a href="#segment-playback" id="toc-segment-playback" class="nav-link" data-scroll-target="#segment-playback">segment-playback</a>
+  <ul class="collapse">
+  <li><a href="#分步手势策略" id="toc-分步手势策略" class="nav-link" data-scroll-target="#分步手势策略">分步手势策略</a></li>
+  </ul></li>
+  <li><a href="#autonomous-playback" id="toc-autonomous-playback" class="nav-link" data-scroll-target="#autonomous-playback">autonomous-playback</a></li>
+  <li><a href="#渲染器" id="toc-渲染器" class="nav-link" data-scroll-target="#渲染器">渲染器</a>
+  <ul class="collapse">
+  <li><a href="#alpha-图集" id="toc-alpha-图集" class="nav-link" data-scroll-target="#alpha-图集">Alpha 图集</a></li>
+  <li><a href="#chroma-视频" id="toc-chroma-视频" class="nav-link" data-scroll-target="#chroma-视频">Chroma 视频</a></li>
+  <li><a href="#baked-视频" id="toc-baked-视频" class="nav-link" data-scroll-target="#baked-视频">Baked 视频</a></li>
+  </ul></li>
+  <li><a href="#输入布局与生命周期" id="toc-输入布局与生命周期" class="nav-link" data-scroll-target="#输入布局与生命周期">输入、布局与生命周期</a></li>
+  <li><a href="#预加载与降级" id="toc-预加载与降级" class="nav-link" data-scroll-target="#预加载与降级">预加载与降级</a></li>
+  <li><a href="#性能验收" id="toc-性能验收" class="nav-link" data-scroll-target="#性能验收">性能验收</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="运行时控制" class="level1">
+<h1>运行时控制</h1>
+<p>本文档是时间控制、输入映射、预加载和运行时性能的唯一事实源。媒体格式由 <a href="../../oil-motion/references/delivery-selection.html">delivery-selection.md</a> 决定；两者独立。</p>
+<section id="先读预算结果" class="level2">
+<h2 class="anchored" data-anchor-id="先读预算结果">先读预算结果</h2>
+<p><code>build/motion-budget.json</code> 必须分别给出：</p>
+<ul>
+<li><code>delivery.selected</code>：使用哪种媒体和渲染器。</li>
+<li><code>runtime.controller</code>：输入如何控制媒体时间。</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><code>time_control</code></th>
+<th><code>runtime.controller</code></th>
+<th>行为</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>scrub</code></td>
+<td><code>frame-scrub</code></td>
+<td>输入值持续映射到帧或时间</td>
+</tr>
+<tr class="even">
+<td><code>segment-play</code></td>
+<td><code>segment-playback</code></td>
+<td>输入选择相邻状态，片段按时间播放</td>
+</tr>
+<tr class="odd">
+<td><code>autonomous</code></td>
+<td><code>autonomous-playback</code></td>
+<td>媒体时间自行推进</td>
+</tr>
+</tbody>
+</table>
+<p>不要根据 <code>scroll</code>、分页布局或视频格式猜控制器。滚动既可以 scrub，也可以触发片段播放。</p>
+</section>
+<section id="时间轴清单" class="level2">
+<h2 class="anchored" data-anchor-id="时间轴清单">时间轴清单</h2>
+<p>所有控制器只读取编译生成的 <code>build/timeline.json</code>，页面中不得维护第二份时间常量。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">schemaVersion</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fps</span><span class="kw">:</span><span class="at"> &lt;实际编码帧率&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">frameDuration</span><span class="kw">:</span><span class="at"> &lt;1 / fps&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">initialState</span><span class="kw">:</span><span class="at"> &lt;稳定状态 ID&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">states</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> &lt;页面与运行时共同使用的状态 ID&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">hold</span><span class="kw">:</span><span class="at"> &lt;该状态的停帧时间&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> &lt;稳定标识&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">from</span><span class="kw">:</span><span class="at"> &lt;起点状态 ID&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">to</span><span class="kw">:</span><span class="at"> &lt;终点状态 ID&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">start</span><span class="kw">:</span><span class="at"> &lt;本段第一张可见帧的时间，包含&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">hold</span><span class="kw">:</span><span class="at"> &lt;本段结束后应停留的最后可见帧时间&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">endExclusive</span><span class="kw">:</span><span class="at"> &lt;本段编码边界，不包含&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">curve</span><span class="kw">:</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> constant | edge-mid-edge</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">rate</span><span class="kw">:</span><span class="at"> &lt;constant 使用&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">edgeRate</span><span class="kw">:</span><span class="at"> &lt;edge-mid-edge 使用&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">midRate</span><span class="kw">:</span><span class="at"> &lt;edge-mid-edge 使用&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>硬性语义：</p>
+<ul>
+<li><code>start &lt;= hold &lt; endExclusive</code>。</li>
+<li>停止播放时只能落在 <code>hold</code>，不能落在 <code>endExclusive</code>。</li>
+<li><code>states</code> 顺序必须与片段的 <code>from → to</code> 一致；页面状态直接使用这些 ID，不另建索引映射表。</li>
+<li>所有时间都来自最终编码后的实际帧，不从生成时长或原始素材手工推算。</li>
+<li>裁剪、拼接或重新编码后必须重新生成清单。</li>
+</ul>
+</section>
+<section id="frame-scrub" class="level2">
+<h2 class="anchored" data-anchor-id="frame-scrub">frame-scrub</h2>
+<p>适用于“输入停在哪里，画面就停在哪里”的交互。使用 <a href="../assets/interactive-motion.ts">assets/interactive-motion.ts</a> 的 <code>createFrameAnimator</code> 管理目标帧、阻尼和反向。</p>
+<p>一维映射：</p>
+<pre class="text"><code>progress = clamp((value - start) / (end - start), 0, 1)
+targetFrame = progress * (frameCount - 1)</code></pre>
+<p>环形输入使用最短环形距离；二维输入使用二维采样网格，不能压成一维进度。输入事件只更新目标值，实际渲染集中在 <code>requestAnimationFrame</code>。</p>
+<p>视频 scrub 每次只提交最新整数目标帧，丢弃过时 seek。需要随机访问或快速反向时使用全关键帧视频，并验收 seek 延迟。</p>
+</section>
+<section id="segment-playback" class="level2">
+<h2 class="anchored" data-anchor-id="segment-playback">segment-playback</h2>
+<p>适用于“输入选择下一状态，动作随后自行完成”的交互。使用 <a href="../assets/interactive-motion.ts">assets/interactive-motion.ts</a> 的 <code>createSegmentPlayer</code>，不要在页面重新实现播放状态机。</p>
+<p>必须满足：</p>
+<ol type="1">
+<li>生产时可以分段生成，但连续链交付前必须合并；运行时使用一个持续存在的媒体实例，切换状态不替换 <code>src</code>、视频节点或图片层。</li>
+<li>输入一发生就启动媒体；页面导航或其他几何动画可以并行，不等待动作结束。</li>
+<li>反向输入先取消当前播放，再从当前 <code>currentTime</code> 向上一状态撤回。</li>
+<li>前进可以使用用户输入触发的 <code>video.play()</code>。反向不能依赖浏览器支持负 <code>playbackRate</code>，由共享控制器按时间轴回放。</li>
+<li>使用 <code>requestVideoFrameCallback</code>，无支持时回退 <code>requestAnimationFrame</code>；不得用低频 <code>timeupdate</code> 判断停帧。</li>
+<li>接近目标时先暂停，再精确设到 <code>hold</code>，避免越过目标后回跳。</li>
+<li>播放速率曲线属于时间轴清单。需要两端快、中间慢时使用 <code>edge-mid-edge</code>；正放与倒放读取同一曲线。</li>
+<li>快速连续输入只保留最新目标，旧任务必须可取消。</li>
+</ol>
+<p>桌面与移动媒体版本在初始化时选择。普通 resize 不换源；确需重载另一版本时，恢复到当前状态的 <code>hold</code> 后再继续。</p>
+<p>分页导航只负责选择目标状态 ID。它不能把分段时间轴改成多个互不相关的视频，也不能用页面切换遮盖媒体接缝。</p>
+<section id="分步手势策略" class="level3">
+<h3 class="anchored" data-anchor-id="分步手势策略">分步手势策略</h3>
+<p><code>segment-playback</code> 与分页导航组合时，必须从 Motion Brief 读取 <code>gesture_policy</code>：</p>
+<ul>
+<li><code>one-gesture-one-step</code>：把同一次滚轮或触控板惯性序列合并成一个方向意图，不能按每个原始事件连续跳状态。</li>
+<li><code>while_active</code>：明确新输入是重定向、排队还是忽略；默认需要可反向的交互使用 <code>retarget</code>。</li>
+<li><code>boundary</code>：首尾状态执行 <code>clamp</code> 或合同明确的 <code>loop</code>，不能越界创建空状态。</li>
+<li><code>programmatic_navigation=ignore</code>：页面自身的平滑滚动和位置校正不得再次触发媒体状态变化。</li>
+<li>页面元素的状态 ID 必须直接匹配 <code>timeline.json.states[].id</code>；找不到、重复或顺序不一致时在初始化阶段失败。</li>
+</ul>
+<p>从 <a href="../assets/step-gesture.ts">assets/step-gesture.ts</a> 的 <code>createStepGestureAdapter</code> 开始实现。滚轮、触控板或触摸层只把方向增量送入该适配器；手势阈值、惯性结束判定和程序化导航锁不得在页面监听、媒体控制器和分页组件中各写一份。</p>
+</section>
+</section>
+<section id="autonomous-playback" class="level2">
+<h2 class="anchored" data-anchor-id="autonomous-playback">autonomous-playback</h2>
+<p>适用于待机、循环或进入可见区域后自行播放的动画。浏览器允许时使用 <code>muted playsinline</code>；需要声音或浏览器阻止自动播放时，等待明确用户手势。循环只在素材本身通过首尾接缝验收时启用。</p>
+</section>
+<section id="渲染器" class="level2">
+<h2 class="anchored" data-anchor-id="渲染器">渲染器</h2>
+<section id="alpha-图集" class="level3">
+<h3 class="anchored" data-anchor-id="alpha-图集">Alpha 图集</h3>
+<ul>
+<li>单元格尺寸统一，并至少覆盖最大 CSS 尺寸乘目标 DPR。</li>
+<li>清单保存帧数、行列、单元格尺寸和参数映射。</li>
+<li>切帧只更新 <code>background-position</code>，不创建多张透明图片交叉淡化。</li>
+<li>默认单张纹理不超过 4096；超预算回到自动路线选择。</li>
+</ul>
+</section>
+<section id="chroma-视频" class="level3">
+<h3 class="anchored" data-anchor-id="chroma-视频">Chroma 视频</h3>
+<ul>
+<li>视频保留均匀色键，由 <code>chroma-video-renderer.ts</code> 绘制透明 Canvas。</li>
+<li>页面背景、文字和其他视觉层位于 Canvas 外部。</li>
+<li>运行时从 <code>compile.json.runtime.keying</code> 读取全部参数，不在页面另写阈值。</li>
+<li>WebGL 或视频失败时显示静态 Alpha 降级图，不能露出色键母版。</li>
+</ul>
+</section>
+<section id="baked-视频" class="level3">
+<h3 class="anchored" data-anchor-id="baked-视频">Baked 视频</h3>
+<ul>
+<li>视频本身包含完整画面，不做抠色、色键或背景合成。</li>
+<li>可由视频元素直接显示，也可绘制到 Canvas。</li>
+<li>失败时显示普通 <code>poster.png</code>。</li>
+</ul>
+</section>
+</section>
+<section id="输入布局与生命周期" class="level2">
+<h2 class="anchored" data-anchor-id="输入布局与生命周期">输入、布局与生命周期</h2>
+<ul>
+<li><code>pointermove</code>、<code>scroll</code> 和触摸事件只记录输入，不在事件回调中反复写 DOM。</li>
+<li>布局变化后重新读取主体位置；不要永久缓存 <code>getBoundingClientRect()</code>。</li>
+<li>使用 <code>IntersectionObserver</code> 暂停离屏计算，使用 <code>ResizeObserver</code> 更新布局。</li>
+<li>手机方向权限必须由用户手势请求；拒绝或不可用时回退触摸或静态状态。</li>
+<li>页面切后台时暂停；恢复后以最新目标和当前媒体时间继续。</li>
+</ul>
+</section>
+<section id="预加载与降级" class="level2">
+<h2 class="anchored" data-anchor-id="预加载与降级">预加载与降级</h2>
+<ul>
+<li>图集预加载清单、静态帧和图集，并等待 <code>Image.decode()</code>。</li>
+<li>视频预加载静态降级、元数据和首个需要的媒体；<code>loadedmetadata</code> 前不得 seek 或播放。</li>
+<li>加载完成前只显示一张静态降级图或简洁加载层。</li>
+<li>资源失败时解除页面锁定并回退静态画面，不让次要动画阻塞页面。</li>
+<li><code>prefers-reduced-motion</code> 使用合同指定的静态状态，不自动播放或连续 scrub。</li>
+</ul>
+</section>
+<section id="性能验收" class="level2">
+<h2 class="anchored" data-anchor-id="性能验收">性能验收</h2>
+<ul>
+<li>每个动画帧最多一次 DOM 写入；目标未变化时不重复渲染。</li>
+<li>离屏或状态稳定时停止 <code>requestAnimationFrame</code>。</li>
+<li>不同时渲染两张大图做“平滑”。</li>
+<li>在冷缓存、弱网、低端移动设备、快速反向和连续输入下检查。</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/vrrmatli\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
