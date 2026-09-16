@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>V Rohith Reddy Matli</title>
+<title>Venkata Rohith Reddy Matli, Ph.D.&nbsp;– V Rohith Reddy Matli</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -154,9 +154,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Venkata Rohith Reddy Matli, Ph.D.</h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <!-- Floating Assistant Container -->
@@ -168,16 +184,14 @@ ul.task-list li input[type="checkbox"] {
 <style>
 .floating-avatar {
   position: fixed;
-  top: 80px;   /* Anchors it near the top */
-  left: 30px;  /* Anchors it to the left */
+  top: 140px;  /* Pushed down to clear the top navigation bar */
+  left: 30px;  
   
-  /* Keep these at 240px so your frame math below works perfectly */
   width: 240px; 
   height: 240px; 
   
-  /* THE MINIATURE TRICK: Shrinks the whole element down to 65% size */
   transform: scale(0.65);
-  transform-origin: top left; /* Ensures it stays pinned to the corner when shrinking */
+  transform-origin: top left; 
   
   border-radius: 50%; 
   overflow: hidden;
@@ -214,13 +228,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // ==========================================
         // 1. THE ANIMATION FIX
         // ==========================================
-        // We calculate the maximum distance the user can POSSIBLY scroll on this specific page
         const maxPossibleScroll = document.documentElement.scrollHeight - window.innerHeight;
-        
-        // We set the animation to finish at 600px, OR the bottom of the page (whichever comes first!)
         const SCROLL_THRESHOLD = Math.min(600, maxPossibleScroll); 
         
-        // Calculate percentage, capping it at 1.0 (100%)
         let scrollPercent = Math.min(scrollPx / SCROLL_THRESHOLD, 1.0);
         let frameIndex = Math.floor(scrollPercent * (TOTAL_FRAMES - 1));
         
@@ -234,8 +244,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // ==========================================
         // 2. THE FADE-OUT EFFECT
         // ==========================================
-        // Starts fading immediately, completely invisible by 400px of scrolling
-        const FADE_THRESHOLD = 400; 
+        // Starts fading immediately, completely invisible by just 150px of scrolling!
+        const FADE_THRESHOLD = 150; 
         let opacity = 1 - (scrollPx / FADE_THRESHOLD);
         avatarContainer.style.opacity = Math.max(opacity, 0);
 
