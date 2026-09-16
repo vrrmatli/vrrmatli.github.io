@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 .floating-avatar {
   position: fixed;
-  top: 140px;  /* Pushed down to clear the top navigation bar */
+  top: 110px;  
   left: 30px;  
   
   width: 240px; 
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const scrollPx = window.scrollY || document.documentElement.scrollTop;
         
         // ==========================================
-        // 1. THE ANIMATION FIX
+        // 1.  ANIMATION 
         // ==========================================
         const maxPossibleScroll = document.documentElement.scrollHeight - window.innerHeight;
         const SCROLL_THRESHOLD = Math.min(600, maxPossibleScroll); 
@@ -244,8 +244,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // ==========================================
         // 2. THE FADE-OUT EFFECT
         // ==========================================
-        // Starts fading immediately, completely invisible by just 150px of scrolling!
-        const FADE_THRESHOLD = 150; 
+        
+        const FADE_THRESHOLD = 100; 
         let opacity = 1 - (scrollPx / FADE_THRESHOLD);
         avatarContainer.style.opacity = Math.max(opacity, 0);
 
